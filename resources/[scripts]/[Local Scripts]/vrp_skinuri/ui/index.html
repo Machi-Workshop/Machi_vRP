@@ -1,0 +1,954 @@
+<html>
+    <head>
+        <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <img id="cursorPointer" src="assets/cursor.png">
+        <div class="skinCreator">
+
+            <!-- Tabs -->
+            <div class="tab">
+              <!-- <a href="#" class="identity disabled" data-link="identity">Identité</a> -->
+              <a href="#" class="visage active" data-link="visage">외관</a>
+              <a href="#" class="pilosite" data-link="pilosite">스타일</a>
+              <a href="#" class="vetements" data-link="vetements">의류</a>
+            </div>
+            
+            <form id="formSkinCreator">
+
+
+              <!-- BLOCK VISAGE -->
+              <div class="block visage active">
+                
+                <div class="group">
+                  <h2>형태</h2>
+                  <div class="input">
+                    <div class="label">남성 얼굴</div>
+                    <div class="type-img">
+                      <label for="pere1">
+                        <input type="radio" name="pere" class="pere" value="0" id="pere1" checked>
+                        <div class="img"><img src="assets/heritage/Face-0.jpg" alt=""></div>
+                      </label>
+                      <label for="pere2">
+                        <input type="radio" name="pere" class="pere" value="1" id="pere2">
+                        <div class="img"><img src="assets/heritage/Face-1.jpg" alt=""></div>
+                      </label>
+                      <label for="pere3">
+                        <input type="radio" name="pere" class="pere" value="2" id="pere3">
+                        <div class="img"><img src="assets/heritage/Face-2.jpg" alt=""></div>
+                      </label>
+                      <label for="pere4">
+                        <input type="radio" name="pere" class="pere" value="3" id="pere4">
+                        <div class="img"><img src="assets/heritage/Face-3.jpg" alt=""></div>
+                      </label>
+                      <label for="pere5">
+                        <input type="radio" name="pere" class="pere" value="4" id="pere5">
+                        <div class="img"><img src="assets/heritage/Face-4.jpg" alt=""></div>
+                      </label>
+                      <label for="pere6">
+                        <input type="radio" name="pere" class="pere" value="5" id="pere6">
+                        <div class="img"><img src="assets/heritage/Face-5.jpg" alt=""></div>
+                      </label>
+                      <label for="pere7">
+                        <input type="radio" name="pere" class="pere" value="6" id="pere7">
+                        <div class="img"><img src="assets/heritage/Face-6.jpg" alt=""></div>
+                      </label>
+                      <label for="pere8">
+                        <input type="radio" name="pere" class="pere" value="7" id="pere8">
+                        <div class="img"><img src="assets/heritage/Face-7.jpg" alt=""></div>
+                      </label>
+                      <label for="pere9">
+                        <input type="radio" name="pere" class="pere" value="8" id="pere9">
+                        <div class="img"><img src="assets/heritage/Face-8.jpg" alt=""></div>
+                      </label>
+                      <label for="pere10">
+                        <input type="radio" name="pere" class="pere" value="9" id="pere10">
+                        <div class="img"><img src="assets/heritage/Face-9.jpg" alt=""></div>
+                      </label>
+                      <label for="pere11">
+                        <input type="radio" name="pere" class="pere" value="10" id="pere11">
+                        <div class="img"><img src="assets/heritage/Face-10.jpg" alt=""></div>
+                      </label>
+                      <label for="pere12">
+                        <input type="radio" name="pere" class="pere" value="11" id="pere12">
+                        <div class="img"><img src="assets/heritage/Face-11.jpg" alt=""></div>
+                      </label>
+                      <label for="pere13">
+                        <input type="radio" name="pere" class="pere" value="12" id="pere13">
+                        <div class="img"><img src="assets/heritage/Face-12.jpg" alt=""></div>
+                      </label>
+                      <label for="pere14">
+                        <input type="radio" name="pere" class="pere" value="13" id="pere14">
+                        <div class="img"><img src="assets/heritage/Face-13.jpg" alt=""></div>
+                      </label>
+                      <label for="pere15">
+                        <input type="radio" name="pere" class="pere" value="14" id="pere15">
+                        <div class="img"><img src="assets/heritage/Face-14.jpg" alt=""></div>
+                      </label>
+                      <label for="pere16">
+                        <input type="radio" name="pere" class="pere" value="15" id="pere16">
+                        <div class="img"><img src="assets/heritage/Face-15.jpg" alt=""></div>
+                      </label>
+                      <label for="pere17">
+                        <input type="radio" name="pere" class="pere" value="16" id="pere17">
+                        <div class="img"><img src="assets/heritage/Face-16.jpg" alt=""></div>
+                      </label>
+                      <label for="pere18">
+                        <input type="radio" name="pere" class="pere" value="17" id="pere18">
+                        <div class="img"><img src="assets/heritage/Face-17.jpg" alt=""></div>
+                      </label>
+                      <label for="pere19">
+                        <input type="radio" name="pere" class="pere" value="18" id="pere19">
+                        <div class="img"><img src="assets/heritage/Face-18.jpg" alt=""></div>
+                      </label>
+                      <label for="pere20">
+                        <input type="radio" name="pere" class="pere" value="19" id="pere20">
+                        <div class="img"><img src="assets/heritage/Face-19.jpg" alt=""></div>
+                      </label>
+                      <label for="pere21">
+                        <input type="radio" name="pere" class="pere" value="20" id="pere21">
+                        <div class="img"><img src="assets/heritage/Face-20.jpg" alt=""></div>
+                      </label>
+                      <label for="pere22">
+                        <input type="radio" name="pere" class="pere" value="42" id="pere22">
+                        <div class="img"><img src="assets/heritage/Face-42.jpg" alt=""></div>
+                      </label>
+                      <label for="pere23">
+                        <input type="radio" name="pere" class="pere" value="43" id="pere23">
+                        <div class="img"><img src="assets/heritage/Face-43.jpg" alt=""></div>
+                      </label>
+                      <label for="pere24">
+                        <input type="radio" name="pere" class="pere" value="44" id="pere24">
+                        <div class="img"><img src="assets/heritage/Face-44.jpg" alt=""></div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">여성 얼굴</div>
+                    <div class="type-img">
+                      <label for="pere25">
+                        <input type="radio" name="pere" class="pere" value="21" id="pere25" checked>
+                        <div class="img"><img src="assets/heritage/Face-21.jpg" alt=""></div>
+                      </label>
+                      <label for="pere26">
+                        <input type="radio" name="pere" class="pere" value="22" id="pere26">
+                        <div class="img"><img src="assets/heritage/Face-22.jpg" alt=""></div>
+                      </label>
+                      <label for="pere27">
+                        <input type="radio" name="pere" class="pere" value="23" id="pere27">
+                        <div class="img"><img src="assets/heritage/Face-23.jpg" alt=""></div>
+                      </label>
+                      <label for="pere28">
+                        <input type="radio" name="pere" class="pere" value="24" id="pere28">
+                        <div class="img"><img src="assets/heritage/Face-24.jpg" alt=""></div>
+                      </label>
+                      <label for="pere29">
+                        <input type="radio" name="pere" class="pere" value="25" id="pere29">
+                        <div class="img"><img src="assets/heritage/Face-25.jpg" alt=""></div>
+                      </label>
+                      <label for="pere30">
+                        <input type="radio" name="pere" class="pere" value="26" id="pere30">
+                        <div class="img"><img src="assets/heritage/Face-26.jpg" alt=""></div>
+                      </label>
+                      <label for="pere31">
+                        <input type="radio" name="pere" class="pere" value="27" id="pere31">
+                        <div class="img"><img src="assets/heritage/Face-27.jpg" alt=""></div>
+                      </label>
+                      <label for="pere32">
+                        <input type="radio" name="pere" class="pere" value="28" id="pere32">
+                        <div class="img"><img src="assets/heritage/Face-28.jpg" alt=""></div>
+                      </label>
+                      <label for="pere33">
+                        <input type="radio" name="pere" class="pere" value="29" id="pere33">
+                        <div class="img"><img src="assets/heritage/Face-29.jpg" alt=""></div>
+                      </label>
+                      <label for="pere34">
+                        <input type="radio" name="pere" class="pere" value="30" id="pere34">
+                        <div class="img"><img src="assets/heritage/Face-30.jpg" alt=""></div>
+                      </label>
+                      <label for="pere35">
+                        <input type="radio" name="pere" class="pere" value="31" id="pere35">
+                        <div class="img"><img src="assets/heritage/Face-31.jpg" alt=""></div>
+                      </label>
+                      <label for="pere36">
+                        <input type="radio" name="pere" class="pere" value="32" id="pere36">
+                        <div class="img"><img src="assets/heritage/Face-32.jpg" alt=""></div>
+                      </label>
+                      <label for="pere37">
+                        <input type="radio" name="pere" class="pere" value="33" id="pere37">
+                        <div class="img"><img src="assets/heritage/Face-33.jpg" alt=""></div>
+                      </label>
+                      <label for="pere38">
+                        <input type="radio" name="pere" class="pere" value="34" id="pere38">
+                        <div class="img"><img src="assets/heritage/Face-34.jpg" alt=""></div>
+                      </label>
+                      <label for="pere39">
+                        <input type="radio" name="pere" class="pere" value="35" id="pere39">
+                        <div class="img"><img src="assets/heritage/Face-35.jpg" alt=""></div>
+                      </label>
+                      <label for="pere40">
+                        <input type="radio" name="pere" class="pere" value="36" id="pere40">
+                        <div class="img"><img src="assets/heritage/Face-36.jpg" alt=""></div>
+                      </label>
+                      <label for="pere41">
+                        <input type="radio" name="pere" class="pere" value="37" id="pere41">
+                        <div class="img"><img src="assets/heritage/Face-37.jpg" alt=""></div>
+                      </label>
+                      <label for="pere42">
+                        <input type="radio" name="pere" class="pere" value="38" id="pere42">
+                        <div class="img"><img src="assets/heritage/Face-38.jpg" alt=""></div>
+                      </label>
+                      <label for="pere43">
+                        <input type="radio" name="pere" class="pere" value="39" id="pere43">
+                        <div class="img"><img src="assets/heritage/Face-39.jpg" alt=""></div>
+                      </label>
+                      <label for="pere44">
+                        <input type="radio" name="pere" class="pere" value="40" id="pere44">
+                        <div class="img"><img src="assets/heritage/Face-40.jpg" alt=""></div>
+                      </label>
+                      <label for="pere45">
+                        <input type="radio" name="pere" class="pere" value="41" id="pere45">
+                        <div class="img"><img src="assets/heritage/Face-41.jpg" alt=""></div>
+                      </label>
+                      <label for="pere46">
+                        <input type="radio" name="pere" class="pere" value="45" id="pere46">
+                        <div class="img"><img src="assets/heritage/Face-45.jpg" alt=""></div>
+                      </label>
+                    </div>
+                  </div>
+
+
+
+                  <div class="input">
+                    <div class="label">남성 / 여성 유전학</div>
+                    <div class="label-value" data-legend="" style="display:none;"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="5" type="range" class="morphologie" min="0" max="10">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>  
+                  
+                  <div class="input">
+                    <div class="label">눈동자 색</div>
+                    <div class="type-radio">
+                      <label for="eye1">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="0" id="eye1" checked>
+                        <span class="color" data-color="#525e37"></span>
+                      </label>
+                      <label for="eye2">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="1" id="eye2">
+                        <span class="color" data-color="#263419"></span>
+                      </label>
+                      <label for="eye3">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="2" id="eye3">
+                        <span class="color" data-color="#83b7d5"></span>
+                      </label>
+                      <label for="eye4">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="3" id="eye4">
+                        <span class="color" data-color="#3e66a3"></span>
+                      </label>
+                      <label for="eye5">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="4" id="eye5">
+                        <span class="color" data-color="#8d6833"></span>
+                      </label>
+                      <label for="eye6">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="5" id="eye6">
+                        <span class="color" data-color="#523711"></span>
+                      </label>
+                      <label for="eye7">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="6" id="eye7">
+                        <span class="color" data-color="#d08418"></span>
+                      </label>
+                      <label for="eye9">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="8" id="eye9">
+                        <span class="color" data-color="#bebebe"></span>
+                      </label>
+                      <label for="eye13">
+                        <input type="radio" name="eyecolor" class="eyecolor" value="12" id="eye13">
+                        <span class="color" data-color="#0d0d0c"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="group">
+                  <h2>가죽</h2>
+                  <div class="input">
+                    <div class="label">피부색</div>
+                    <div class="type-radio">
+                      <label for="p1">
+                        <input type="radio" name="peaucolor" class="peaucolor" value="12" id="p1" checked>
+                        <span class="color" data-color="#ecc8ae"></span>
+                      </label>
+                      <label for="p2">
+                        <input type="radio" name="peaucolor" class="peaucolor" value="25" id="p2">
+                        <span class="color" data-color="#ce9874"></span>
+                      </label>
+                      <label for="p3">
+                        <input type="radio" name="peaucolor" class="peaucolor" value="19" id="p3">
+                        <span class="color" data-color="#925a41"></span>
+                      </label>
+                      <label for="p4">
+                        <input type="radio" name="peaucolor" class="peaucolor" value="14" id="p4">
+                        <span class="color" data-color="#4e3a26"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">여드름</div>
+                    <div class="label-value" data-legend="/23"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="acne" min="0" max="23">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">피부 문제</div>
+                    <div class="label-value" data-legend="/11"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="pbpeau" min="0" max="11">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">작은 반점</div>
+                    <div class="label-value" data-legend="/17"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="tachesrousseur" min="0" max="17">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">주름</div>
+                    <div class="label-value" data-legend="/14"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="rides" min="0" max="14">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">주름의 강도</div>
+                    <div class="label-value" data-legend="/10"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="10" type="range" class="intensiterides" min="0" max="10">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- BLOCK PILOSITE -->
+              <div class="block pilosite">
+                <div class="group">
+                  <h2>머리</h2>
+                  <div class="input">
+                    <div class="label">머리카락</div>
+                    <div class="label-value" data-legend="/74"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="hair" min="0" max="74">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">머리 색</div>
+                    <div class="type-radio">
+                      <label for="c1">
+                        <input type="radio" name="haircolor" class="haircolor" value="0" id="c1" checked>
+                        <span class="color" data-color="#1D1D1A"></span>
+                      </label>
+                      <label for="c2">
+                        <input type="radio" name="haircolor" class="haircolor" value="2" id="c2">
+                        <span class="color" data-color="#4B392D"></span>
+                      </label>
+                      <label for="c3">
+                        <input type="radio" name="haircolor" class="haircolor" value="4" id="c3">
+                        <span class="color" data-color="#7A3B1F"></span>
+                      </label>
+                      <label for="c4">
+                        <input type="radio" name="haircolor" class="haircolor" value="6" id="c4">
+                        <span class="color" data-color="#A35631"></span>
+                      </label>
+                      <label for="c5">
+                        <input type="radio" name="haircolor" class="haircolor" value="8" id="c5">
+                        <span class="color" data-color="#A96F49"></span>
+                      </label>
+                      <label for="c6">
+                        <input type="radio" name="haircolor" class="haircolor" value="10" id="c6">
+                        <span class="color" data-color="#BD8D5E"></span>
+                      </label>
+                      <label for="c7">
+                        <input type="radio" name="haircolor" class="haircolor" value="12" id="c7">
+                        <span class="color" data-color="#CBA66F"></span>
+                      </label>
+                      <label for="c8">
+                        <input type="radio" name="haircolor" class="haircolor" value="14" id="c8">
+                        <span class="color" data-color="#E8BE78"></span>
+                      </label>
+                      <label for="c9">
+                        <input type="radio" name="haircolor" class="haircolor" value="16" id="c9">
+                        <span class="color" data-color="#D09E6A"></span>
+                      </label>
+                      <label for="c10">
+                        <input type="radio" name="haircolor" class="haircolor" value="18" id="c10">
+                        <span class="color" data-color="#993524"></span>
+                      </label>
+                      <label for="c11">
+                        <input type="radio" name="haircolor" class="haircolor" value="20" id="c11">
+                        <span class="color" data-color="#9C1611"></span>
+                      </label>
+                      <label for="c12">
+                        <input type="radio" name="haircolor" class="haircolor" value="22" id="c12">
+                        <span class="color" data-color="#D1381E"></span>
+                      </label>
+                      <label for="c13">
+                        <input type="radio" name="haircolor" class="haircolor" value="24" id="c13">
+                        <span class="color" data-color="#C85831"></span>
+                      </label>
+                      <label for="c14">
+                        <input type="radio" name="haircolor" class="haircolor" value="26" id="c14">
+                        <span class="color" data-color="#947A67"></span>
+                      </label>
+                      <label for="c15">
+                        <input type="radio" name="haircolor" class="haircolor" value="28" id="c15">
+                        <span class="color" data-color="#D8C1AC"></span>
+                      </label>
+                      <label for="c16">
+                        <input type="radio" name="haircolor" class="haircolor" value="30" id="c16">
+                        <span class="color" data-color="#734F61"></span>
+                      </label>
+                      <label for="c17">
+                        <input type="radio" name="haircolor" class="haircolor" value="32" id="c17">
+                        <span class="color" data-color="#AD476A"></span>
+                      </label>
+                      <label for="c18">
+                        <input type="radio" name="haircolor" class="haircolor" value="35" id="c18">
+                        <span class="color" data-color="#FFAEBC"></span>
+                      </label>
+                      <label for="c19">
+                        <input type="radio" name="haircolor" class="haircolor" value="36" id="c19">
+                        <span class="color" data-color="#089A8D"></span>
+                      </label>
+                      <label for="c20">
+                        <input type="radio" name="haircolor" class="haircolor" value="40" id="c20">
+                        <span class="color" data-color="#309060"></span>
+                      </label>
+                      <label for="c21">
+                        <input type="radio" name="haircolor" class="haircolor" value="43" id="c21">
+                        <span class="color" data-color="#A3C015"></span>
+                      </label>
+                      <label for="c22">
+                        <input type="radio" name="haircolor" class="haircolor" value="45" id="c22">
+                        <span class="color" data-color="#EEC85C"></span>
+                      </label>
+                      <label for="c23">
+                        <input type="radio" name="haircolor" class="haircolor" value="48" id="c23">
+                        <span class="color" data-color="#FE8B10"></span>
+                      </label>
+                      <label for="c24">
+                        <input type="radio" name="haircolor" class="haircolor" value="53" id="c24">
+                        <span class="color" data-color="#D40B0E"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group">
+                  <h2>이마</h2>
+                  <div class="input">
+                    <div class="label">눈썹 모양</div>
+                    <div class="label-value" data-legend="/34"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="sourcils" min="0" max="34">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">두꺼운 눈썹</div>
+                    <div class="label-value" data-legend="/10"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="10" type="range" class="epaisseursourcils" min="0" max="10">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="group">
+                  <h2>수염</h2>
+                  <div class="input">
+                    <div class="label">수염의 종류</div>
+                    <div class="label-value" data-legend="/28"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="0" type="range" class="barbe" min="0" max="28">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">수염의 두께</div>
+                    <div class="label-value" data-legend="/10"></div>
+                    <div class="type-range">
+                      <a href="#" class="arrow arrow-left">&nbsp;</a>
+                      <input value="10" type="range" class="epaisseurbarbe" min="0" max="10">
+                      <a href="#" class="arrow arrow-right">&nbsp;</a>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <div class="label">수염 색깔</div>
+                    <div class="type-radio">
+                      <label for="bc1">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="0" id="bc1" checked>
+                        <span class="color" data-color="#1D1D1A"></span>
+                      </label>
+                      <label for="bc2">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="2" id="bc2">
+                        <span class="color" data-color="#4B392D"></span>
+                      </label>
+                      <label for="bc3">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="4" id="bc3">
+                        <span class="color" data-color="#7A3B1F"></span>
+                      </label>
+                      <label for="bc4">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="6" id="bc4">
+                        <span class="color" data-color="#A35631"></span>
+                      </label>
+                      <label for="bc5">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="8" id="bc5">
+                        <span class="color" data-color="#A96F49"></span>
+                      </label>
+                      <label for="bc6">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="10" id="bc6">
+                        <span class="color" data-color="#BD8D5E"></span>
+                      </label>
+                      <label for="bc7">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="12" id="bc7">
+                        <span class="color" data-color="#CBA66F"></span>
+                      </label>
+                      <label for="bc8">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="14" id="bc8">
+                        <span class="color" data-color="#E8BE78"></span>
+                      </label>
+                      <label for="bc9">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="16" id="bc9">
+                        <span class="color" data-color="#D09E6A"></span>
+                      </label>
+                      <label for="bc13">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="24" id="bc13">
+                        <span class="color" data-color="#C85831"></span>
+                      </label>
+                      <label for="bc14">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="26" id="bc14">
+                        <span class="color" data-color="#947A67"></span>
+                      </label>
+                      <label for="bc15">
+                        <input type="radio" name="barbecolor" class="barbecolor" value="28" id="bc15">
+                        <span class="color" data-color="#D8C1AC"></span>
+                      </label>
+                    </div>
+                  </div>
+              </div>
+
+              </div>
+
+              <!-- BLOCK CLOTHES -->
+              <div class="block vetements">
+                <div class="group">
+                  <h2>모자</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="chapeaux">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">아무것도 없음</li>
+                    <li data="1">비니</li>
+                    <li data="2">흰 비니</li>
+                    <li data="3">어부 모자</li>
+                    <li data="4">LS 블랙 모자</li>
+                    <li data="5">LS 화이트 모자</li>
+                    <li data="6">레게 모자</li>
+                    <li data="7">화이트 베레모</li>
+                    <li data="8">회색 베레모</li>
+                    <li data="9">검은 베레모</li>
+                    <li data="10">갈색 베레모</li>
+                    <li data="11">일반 모자</li>
+                    <li data="12">일반 모자</li>
+                    <li data="13">일반 모자</li>
+                    <li data="14">일반 모자</li>
+                    <li data="15">회색 모자</li>
+                    <li data="16">흰색 모자</li>
+                    <li data="17">카우보이 모자</li>
+                    <li data="18">화이트 두건</li>
+                    <li data="19">검은 두건</li>
+                    <li data="20">블랙 헤드폰</li>
+                    <li data="21">화이트 헤드폰</li>
+                    <li data="22">군인 모자</li>
+                    <li data="23">휴가갈때 쓰는 모자</li>
+                    <li data="24">마피아 모자</li>
+                    <li data="25">중산모</li>
+                    <li data="26">마술사 모자</li>
+                    <li data="27">양모 모자</li>
+                    <li data="28">레드 브로커 모자</li>
+                    <li data="29">블랙 브로커 모자</li>
+                    <li data="30">일반 모자</li>
+                    <li data="31">일반 모자</li>
+                    <li data="32">일반 모자</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+                <div class="group">
+                  <h2>안경</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="lunettes">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">안경</li>
+                    <li data="1">안경</li>
+                    <li data="2">안경</li>
+                    <li data="3">안경</li>
+                    <li data="4">안경</li>
+                    <li data="5">안경</li>
+                    <li data="6">안경</li>
+                    <li data="7">안경</li>
+                    <li data="8">안경</li>
+                    <li data="9">안경</li>
+                    <li data="10">안경</li>
+                    <li data="11">안경</li>
+                    <li data="11">안경</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+                <div class="group">
+                  <h2>귀</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="oreilles">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">귀걸이</li>
+                    <li data="1">귀걸이</li>
+                    <li data="2">귀걸이</li>
+                    <li data="3">귀걸이</li>
+                    <li data="4">귀걸이</li>
+                    <li data="5">귀걸이</li>
+                    <li data="6">귀걸이</li>
+                    <li data="7">귀걸이</li>
+                    <li data="8">귀걸이</li>
+                    <li data="9">귀걸이</li>
+                    <li data="10">귀걸이</li>
+                    <li data="11">귀걸이</li>
+                    <li data="12">귀걸이</li>
+                    <li data="13">귀걸이</li>
+                    <li data="14">귀걸이</li>
+                    <li data="15">귀걸이</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+
+                <div class="group">
+                  <h2>상의</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="hauts">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">알몸</li>
+                    <li data="1">회색 티</li>
+                    <li data="2">흰색 티</li>
+                    <li data="3">나시</li>
+                    <li data="4">여친만나는 옷</li>
+                    <li data="5">편의점 갈때 입는 옷</li>
+                    <li data="6">여자 꼬시는 옷</li>
+                    <li data="7">정장</li>
+                    <li data="8">정장</li>
+                    <li data="9">나시</li>
+                    <li data="10">꾸미고 싶을때</li>
+                    <li data="11">꾸미고 싶을때</li>
+                    <li data="12">꾸미고 싶을때</li>
+                    <li data="13">파란색 후드집업</li>
+                    <li data="14">똥색 후드집업</li>
+                    <li data="15">보라색 후드집업</li>
+                    <li data="16">밀리터리 후드집업</li>
+                    <li data="17">아저씨 옷</li>
+                    <li data="18">정장</li>
+                    <li data="19">정장</li>
+                    <li data="20">정장</li>
+                    <li data="21">정장</li>
+                    <li data="22">찐따 셔츠</li>
+                    <li data="23">바지에 넣은 셔츠</li>
+                    <li data="24">개찐따 셔츠</li>
+                    <li data="25">개찐따 셔츠</li>
+                    <li data="26">갈색 티</li>
+                    <li data="27">파란색 티</li>
+                    <li data="28">빨간색 티</li>
+                    <li data="29">파란색 나시</li>
+                    <li data="30">노란색 나시</li>
+                    <li data="31">나시</li>
+                    <li data="32">바지에 넣은 파란색셔츠</li>
+                    <li data="33">바지에 넣은 핑크셔츠</li>
+                    <li data="34">바지에 넣은 체크무늬 셔츠</li>
+                    <li data="35">정장</li>
+                    <li data="36">나시</li>
+                    <li data="37">나시</li>
+                    <li data="38">멋부리고 싶을때 입는 옷</li>
+                    <li data="39">멋부리고 싶을때 입는 옷</li>
+                    <li data="40">멋부리고 싶을때 입는 옷</li>
+                    <li data="41">회색 긴팔티</li>
+                    <li data="42">노란색 긴팔티</li>
+                    <li data="43">아저씨 옷</li>
+                    <li data="44">아저씨 옷</li>
+                    <li data="45">셔츠</li>
+                    <li data="46">멜빵 셔츠</li>
+                    <li data="47">간지나는 검은색 옷</li>
+                    <li data="48">간지나는 흰색 옷</li>
+                    <li data="49">간지나는 초록색 옷</li>
+                    <li data="50">후드집업</li>
+                    <li data="51">부자가 입는 옷</li>
+                    <li data="52">부자가 입는 옷</li>
+                    <li data="53">부자가 입는 옷</li>
+                    <li data="54">정장</li>
+                    <li data="55">래퍼가 입는 옷</li>
+                    <li data="56">정장</li>
+                    <li data="57">공부하는 옷</li>
+                    <li data="58">늘어난 흰티</li>
+                    <li data="59">늘어난 검은티</li>
+                    <li data="60">늘어난 아저씨 옷</li>
+                    <li data="61">늘어난 아저씨 옷</li>
+                    <li data="62">늘어난 아저씨 옷</li>
+                    <li data="63">검은색 후드티</li>
+                    <li data="64">흰색 후드티</li>
+                    <li data="65">빨간색 후드티</li>
+                    <li data="66">찐따 옷</li>
+                    <li data="67">찐따 옷</li>
+                    <li data="68">찐따 옷</li>
+                    <li data="69">찐따 옷</li>
+                    <li data="70">찐따 옷</li>
+                    <li data="71">찐따 옷</li>
+                    <li data="72">검은색 맨투맨</li>
+                    <li data="73">바지에 넣은 셔츠</li>
+                    <li data="74">정장</li>
+                    <li data="75">정장</li>
+                    <li data="76">정장</li>
+                    <li data="77">꽂무늬 셔츠</li>
+                    <li data="78">정장</li>
+                    <li data="79">대학생이 입는 옷</li>
+                    <li data="80">회색 목티</li>
+                    <li data="81">검은색 목티</li>
+                    <li data="82">자켓</li>
+                    <li data="83">셔츠</li>
+                    <li data="84">셔츠</li>
+                    <li data="85">셔츠</li>
+                    <li data="86">셔츠</li>
+                    <li data="87">아저씨 옷</li>
+                    <li data="88">검은색 후드티</li>
+                    <li data="89">빨간색 후드티</li>
+                    <li data="90">찐따 옷</li>
+                    <li data="91">찐따 옷</li>
+                    <li data="92">찐따 옷</li>
+                    <li data="93">찐따 옷</li>
+                    <li data="94">찐따 옷</li>
+                    <li data="95">찐따 옷</li>
+                    <li data="96">찐따 옷</li>
+                    <li data="97">흰색 반팔 티</li>
+                    <li data="98">가죽 자켓</li>
+                    <li data="99">빨간색 패딩</li>
+                    <li data="100">초록색 패딩</li>
+                    <li data="101">갈색 패딩</li>
+                    <li data="102">노란색 패딩</li>
+                    <li data="103">청자켓</li>
+                    <li data="104">청자켓</li>
+                    <li data="105">청자켓</li>
+                    <li data="106">거지옷</li>
+                    <li data="107">헬스갈때 입는 옷</li>
+                    <li data="108">밀리터리 후드티</li>
+                    <li data="109">GUFFY 후드티</li>
+                    <li data="110">흰색 후드티</li>
+                    <li data="111">반팔 후드티</li>
+                    <li data="112">반팔티</li>
+                    <li data="113">바람막이</li>
+                    <li data="114">바람막이</li>
+                    <li data="115">바람막이</li>
+                    <li data="116">맨투맨</li>
+                    <li data="117">패딩</li>
+                    <li data="118">늘어난 티</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+
+                <div class="group">
+                  <h2>바지</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="pantalons">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">팬티</li>
+                    <li data="1">청바지</li>
+                    <li data="2">청바지</li>
+                    <li data="3">청바지</li>
+                    <li data="4">반바지</li>
+                    <li data="5">긴바지</li>
+                    <li data="6">검은색 바지</li>
+                    <li data="7">검은색 바지</li>
+                    <li data="8">청바지</li>
+                    <li data="9">흰색 추리닝</li>
+                    <li data="10">검은색 추리닝</li>
+                    <li data="11">거지 바지</li>
+                    <li data="12">거지 바지</li>
+                    <li data="13">주머니 달린 바지</li>
+                    <li data="14">주머니 달린 바지</li>
+                    <li data="15">검은색 슬랙스</li>
+                    <li data="16">파란색 슬랙스</li>
+                    <li data="17">검은색 반바지</li>
+                    <li data="18">회색 반바지</li>
+                    <li data="19">밝은갈색 반바지</li>
+                    <li data="20">파란색 핫팬츠</li>
+                    <li data="21">검은색 핫팬츠</li>
+                    <li data="22">빨간색 핫팬츠</li>
+                    <li data="23">반바지</li>
+                    <li data="24">흰색 슬랙스</li>
+                    <li data="25">검은색 슬랙스</li>
+                    <li data="26">회색 슬랙스</li>
+                    <li data="27">흰색 슬랙스</li>
+                    <li data="28">긴바지</li>
+                    <li data="29">청바지</li>
+                    <li data="30">빨간 긴바지</li>
+                    <li data="31">청바지</li>
+                    <li data="32">검은색 슬랙스</li>
+                    <li data="33">회색 슬랙스</li>
+                    <li data="34">흰색 슬랙스</li>
+                    <li data="35">갈색 슬랙스</li>
+                    <li data="36">통넓은 반바지</li>
+                    <li data="37">통넓은 반바지</li>
+                    <li data="38">긴바지</li>
+                    <li data="39">긴바지</li>
+                    <li data="40">슬랙스</li>
+                    <li data="41">슬랙스</li>
+                    <li data="42">반바지</li>
+                    <li data="43">추리닝</li>
+                    <li data="44">체크무늬 긴바지</li>
+                    <li data="45">체크무늬 긴바지</li>
+                    <li data="46">검은색 긴바지</li>
+                    <li data="47">청바지</li>
+                    <li data="48">청바지</li>
+                    <li data="49">긴바지</li>
+                    <li data="50">긴바지</li>
+                    <li data="51">긴바지</li>
+                    <li data="52">긴바지</li>
+                    <li data="53">긴바지</li>
+                    <li data="54">긴바지</li>
+                    <li data="55">밀리터리 긴바지</li>
+                    <li data="56">밀리터리 반바지</li>
+                    <li data="57">긴바지</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+
+                <div class="group">
+                  <h2>신발</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="chaussures">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">맨발</li>
+                    <li data="1">회색 운동화</li>
+                    <li data="2">검은색 운동화</li>
+                    <li data="3">흰색 운동화</li>
+                    <li data="4">보라색 운동화</li>
+                    <li data="5">운동화</li>
+                    <li data="6">갈색 운동화</li>
+                    <li data="7">파란색 운동화</li>
+                    <li data="8">검은색 운동화</li>
+                    <li data="9">핑크색 운동화</li>
+                    <li data="10">노란색 운동화</li>
+                    <li data="11">회색 운동화</li>
+                    <li data="12">샌들</li>
+                    <li data="13">슬리퍼</li>
+                    <li data="14">흰색 운동화</li>
+                    <li data="15">빨간색 운동화</li>
+                    <li data="16">검은색 운동화</li>
+                    <li data="17">빨간색 운동화</li>
+                    <li data="18">노란색 운동화</li>
+                    <li data="19">파란색 운동화</li>
+                    <li data="20">검은색 구두</li>
+                    <li data="21">갈색 구두</li>
+                    <li data="22">하늘색 운동화</li>
+                    <li data="23">핑크색 운동화</li>
+                    <li data="24">검은색 구두</li>
+                    <li data="25">갈색 구두</li>
+                    <li data="26">샌들</li>
+                    <li data="27">갈색 구두</li>
+                    <li data="28">검은색 구두</li>
+                    <li data="29">회색 구두</li>
+                    <li data="30">흰색 운동화</li>
+                    <li data="31">검은색 운동화</li>
+                    <li data="32">빨간색 운동화</li>
+                    <li data="33">빨간색 운동화</li>
+                    <li data="34">흰색 운동화</li>
+                    <li data="35">노란색 운동화</li>
+                    <li data="36">갈색 구두</li>
+                    <li data="37">검은색 구두</li>
+                    <li data="38">하늘색 단화</li>
+                    <li data="39">검은색 단화</li>
+                    <li data="40">밀리터리 단화</li>
+                    <li data="41">핑크색 운동화</li>
+                    <li data="42">갈색 운동화</li>
+                    <li data="43">빨간색 운동화</li>
+                    <li data="44">흰색 운동화</li>
+                    <li data="45">검은색 운동화</li>
+                    <li data="46">핑크색 운동화</li>
+                    <li data="47">흰색 운동화</li>
+                    <li data="48">초록색 운동화</li>
+                    <li data="49">갈색 운동화</li>
+                    <li data="50">빛나는 신발</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+
+                <div class="group">
+                  <h2>시계</h2>
+                  <div class="label-value" data-legend="">0</div>
+                  <ul class="montre">
+                    <button type="button" class="arrow arrowvetement-left">&nbsp;</button>
+                    <li data="0" class="active">시계 없음</li>
+                    <li data="1">시계</li>
+                    <li data="2">시계</li>
+                    <li data="3">시계</li>
+                    <li data="4">시계</li>
+                    <li data="5">시계</li>
+                    <li data="6">시계</li>
+                    <li data="7">시계</li>
+                    <button type="button" class="arrow arrowvetement-right">&nbsp;</button>
+                  </ul>
+                </div>
+
+              </div>
+
+              <!-- Submit -->
+              <button class="submit">저장하기</button>
+          </form>
+        </div>
+
+        <div class="popup confirmation">
+          <p>저장하시겠습니까 ?</p>
+          <div class="buttons">
+            <div class="button yes">네</div>
+            <div class="button no">아니요</div>
+          </div>
+        </div>
+
+        <!-- JS Scripts -->
+        <script src="front.js" type="text/javascript"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

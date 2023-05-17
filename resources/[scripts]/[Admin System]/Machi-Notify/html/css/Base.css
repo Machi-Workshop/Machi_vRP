@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+#app {
+  display: none;
+}
+
+.visable {
+  display: block !important;
+}
+
+body {
+  margin: 0;
+  /* background-color: #424242; */
+  overflow: hidden;
+}
+
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #212121;
+}
+
+.white {
+  color: #fafafa;
+}
+
+.notify-base {
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 200px;
+  width: 100vw;
+
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.notify-list {
+  display: flex;
+
+  width: auto;
+
+  flex-direction: column;
+
+  justify-content: top;
+
+  margin-right: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.notify {
+  width: 350px;
+  border-radius: 5px;
+
+  background-color: rgba(240, 240, 240, 0.8);
+
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.5);
+
+  color: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  margin-bottom: 10px;
+}
+
+.notify-police {
+  background: linear-gradient(45deg, rgba(0,0,255,0.8) 0%, rgba(0,0,150,0.8) 35%);
+}
+
+.notify-ems {
+  background: linear-gradient(45deg, rgba(255,0,0,0.8) 0%, rgba(150,0,0,0.8) 35%);
+}
+
+.notify-reboot {
+  background: linear-gradient(45deg, rgba(255,0,0,0.8) 0%, rgba(255,0,0,0.8) 35%);
+}
+
+.notify-admin {
+  background: linear-gradient(45deg, rgba(10,10,10,0.8) 0%, rgba(40,40,40,0.8) 35%);
+}
+
+.notify-welcome {
+  background: linear-gradient(45deg, rgba(0,153,205,0.8) 0%, rgba(255,102,0,0.8) 35%);
+}
+
+.notify-staff {
+  background: linear-gradient(45deg, rgb(255, 102, 0) 0%, rgba(255,102,0,0.8) 35%);
+}
+
+.notify-prison {
+  background: linear-gradient(45deg, rgba(0,150,255,0.8) 0%, rgba(0,150,150,0.8) 35%);
+}
+
+.notify-taxi {
+  background: linear-gradient(45deg, rgba(255, 236, 24, 0.8) 0%, rgba(255, 236, 24, 0.8) 35%);
+}
+
+.notify-rack {
+  background: linear-gradient(45deg, rgba(133, 184, 46, 0.8) 0%, rgba(123, 184, 18, 0.8) 35%);
+}
+
+.notify-taxi * {
+  color: #424242 !important;
+}
+
+.notify * {
+  color: white;
+}
+
+.notify-content {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.notify-content .notify-column {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.notify-content .logo {
+  width: 50px;
+  height: 50px;
+
+  background-position: center;
+  background-size: 50px 50px;
+}
+
+.notify-content .appName {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 10px;
+
+  align-items: center;
+}
+
+.notify-content .appName .appIcon {
+  width: 25px;
+  height: 25px;
+
+  border-radius: 8px;
+
+  background-size: 25px 25px;
+  background-position: center;
+
+  background-color: rgba(240,240,240,1);
+  box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.5);
+
+  padding: 1px;
+
+  background-repeat: no-repeat;
+
+  margin-right: 10px;
+}
+
+.notify-content .appName .name {
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.notify-content .contents {
+  /* height: 60px; */
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.notify-content .contents .title {
+  font-weight: 800;
+  font-size: 12pt;
+
+  margin-bottom: 5px;
+}
+
+.notify-content .contents .content {
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+.reboot-timer {
+  font-size: 14pt;
+  font-weight: 4000;
+}
+
+.taxi-price {
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.author {
+  text-align: right;
+  font-size: 7pt;
+}
+
+.header-noticement {
+  width: 100vw;
+  height: 50px;
+
+  background-color: #212121;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-noticement * {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fafafa;
+}

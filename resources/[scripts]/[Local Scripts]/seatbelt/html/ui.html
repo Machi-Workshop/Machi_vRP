@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+  	<script src="app.js"></script>
+  	<link rel="stylesheet" href="style.css">
+    <audio id="warningsnd" loop>
+			 <source src="warning.ogg" type="audio/ogg">
+		</audio>
+        <script>
+        var JMAudio = document.getElementById("warningsnd"); 
+        
+        window.addEventListener('message', function(event) {
+            
+            if (event.data.displayWindow == 'true') {
+                JMAudio.volume = 0.1;
+                JMAudio.play();
+				}
+			else if (event.data.displayWindow == 'false') {
+                JMAudio.pause();
+            }
+        });
+		
+        </script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<img src="../img/seatbelt.png" class="blink-image" alt="header">
+		</header>
+	</div>
+</body>
+</html>
+

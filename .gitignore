@@ -1,0 +1,7 @@
+core/citizen/
+core/citizen/crashes/
+cache/
+DB/default/
+*.txt
+DB/default/CURRENT
+DB/default/LOG

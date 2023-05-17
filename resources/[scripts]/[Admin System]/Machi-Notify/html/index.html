@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/Base.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" />
+  <title>Notification</title>
+
+  <script src="https://unpkg.com/vue@2.6.0/dist/vue.js"></script>
+  <script src="./scripts/index.js" type="module"></script>
+</head>
+
+<body>
+  <div id="app">
+    <template class="debug" v-if="debug === true">
+      <span class="white">UI Debugger</span>
+      <br />
+      <textarea id="debug-notify-text" v-model="debugNotifyText">
+      </textarea>
+      <textarea id="debug-notify-author" v-model="debugNotifyAuthor">
+      </textarea>
+      <button v-on:click="DEBUG_ADD_POICE">경찰 공지 발송</button>
+      <button v-on:click="DEBUG_ADD_PRISON">교정본부 공지 발송</button>
+      <button v-on:click="DEBUG_ADD_EMS">EMS 공지 발송</button>
+      <button v-on:click="DEBUG_ADD_STAFF">스탭 공지 발송</button>
+      <button v-on:click="DEBUG_ADD_ADMIN">관리자 공지 발송</button>
+      <button v-on:click="DEBUG_ADD_RACK">렉카 공지 발송</button>
+      <button v-on:click="TAXI_MESSAGE">택시 공지 발송</button>
+      <br />
+      <textarea id="debug-notify-reboot-time" v-model="notifyRebootTime"></textarea>
+      <button v-on:click="DEBUG_ADD_REBOOT">리부팅 공지 발송</button>
+      <button v-on:click="DEBUG_REMOVE_REBOOT">리부팅 공지 취소</button>
+    </template>
+    <div class="notify-base">
+      <div class="notify-list">
+        <!-- Notify List -->
+        <div class="notify animated faster" v-for="notifyItem in notify" :class="notifyItem.theme">
+          <div class="notify-content">
+            <div class="notify-column">
+              <div class="appName" v-if="notifyItem.appName !== undefined">
+                <div class="appIcon" :style="{ 'background-image': `url('./images/${notifyItem.icon}')` }"></div>
+                <span class="name">{{notifyItem.appName}}</span>
+              </div>
+            </div>
+            <div class="notify-column">
+              <div class="contents">
+                <div class="title">
+                  {{notifyItem.title}}
+                </div>
+                <div class="content" v-html="notifyItem.content"></div>
+                <div class="author" v-if="notifyItem.author !== undefined" v-html="notifyItem.author"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

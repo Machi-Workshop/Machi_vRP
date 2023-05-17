@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-weight: bold;
+    letter-spacing: -0.54px;
+
+    outline: none;
+
+    /* background-size: 100%;
+    background-image: url("https://media.discordapp.net/attachments/958778070725185626/985594169101803520/unknown.png"); */
+}
+
+* {
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+.main {
+    position: fixed;
+    right: 15px;
+    bottom: 70px;
+    width: 230px;
+    height: min-content;
+    /* transform: perspective(250px)
+    rotateY(-20deg); */
+}
+
+.main .bar {
+    position: relative;
+    width: 100%;
+    height: 17px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.main .bar .canbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main .bar .canbg .can {
+    position: relative;
+    display: flex;
+    float: right;
+    width: 9.5%;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 1);
+}
+
+.main .bar .bar_value {
+    width: 70%;
+    height: 100%;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.main .text {
+    text-align: right;
+    color: rgb(255, 233, 62);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+.main img {
+    position: absolute;
+    right: 2px;
+    bottom: 30px;
+    height: 50px;
+    transform: scaleX(-1);
+
+    /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(106deg) brightness(104%) contrast(101%); */
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(106deg) brightness(104%) contrast(101%) drop-shadow(0 0 5px rgb(0, 0, 0));
+    
+    border-left: 3px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.main .gun_name {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    bottom: 23px;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.main .tan {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+    bottom: 23px;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
